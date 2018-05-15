@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     #
      resp.write "#{Time.now}"
-
+     resp.finish 
   end
 
 end
